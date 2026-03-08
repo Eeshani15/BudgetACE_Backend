@@ -122,15 +122,23 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
+# --- AUTH ---
+AUTH_USER_MODEL = "accounts.User"
+
+AUTHENTICATION_BACKENDS = [
+    "accounts.backends.EmailBackend",
+]
+
+
 # --- CORS / CSRF ---
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
     "http://localhost:5500",
-    "https://fascinating-lamington-8f06e7.netlify.app",
+    "https://budgetace.netlify.app",
+    "https://genuine-caramel-54bcc0.netlify.app/"
 ]
-
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://fascinating-lamington-8f06e7.netlify.app",
+    "https://budgetace.netlify.app",
 ]
