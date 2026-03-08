@@ -134,11 +134,10 @@ AUTHENTICATION_BACKENDS = [
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
     "http://localhost:5500",
-    "https://budgetace.netlify.app",
-    "https://genuine-caramel-54bcc0.netlify.app/"
+    "https://resplendent-mooncake-c6f8ab.netlify.app"
 ]
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://budgetace.netlify.app",
+    "https://resplendent-mooncake-c6f8ab.netlify.app"
 ]
